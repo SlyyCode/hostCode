@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <title>Copy code</title>
+    <title>Enter Code</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 </head>
 <body>
-    <div class="container">
+    <div class="home">
         <div class="header">
-            <button id="copyButton">Copy the code</button>
+            <h1>Welcome to hostCode !</h1>
             <button id="toggleTheme">Light mode</button>
         </div>
-        <pre id="codeBlock"><code><%= code %></code></pre>
+        <h2>Please enter a code :</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" name="route" placeholder="Enter code here" required>
+            <button id="submitcode" type="submit">Submit</button>
+        </form>
     </div>
-    <script src="js/copy.js"></script>
+    <script src="js/searchCode.js"></script>
     <script src="js/theme.js"></script>
 </body>
 </html>

@@ -1,41 +1,182 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+    color: #f4f4f9;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
-    width: 80%;
-    margin: 50px auto;
+    display: block;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
+.container .header {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 pre {
-    background-color: #272822;
-    color: #f8f8f2;
-    padding: 20px;
-    overflow-x: auto;
-    border-radius: 5px;
+    margin: 0;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #f4f4f9;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
+    border-radius: 5px;
+    overflow-x: auto;
 }
 
-button {
-    display: block;
-    margin: 20px auto;
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.home .header {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    border-bottom: 2px solid #444;
+}
+
+.home .header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#toggleTheme {
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #444;
+    color: #f4f4f9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+#toggleTheme:hover {
+    background-color: #666;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#copyButton {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #f4f4f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#copyButton:hover {
+    background-color: #666;
+}
+
+#toggleTheme {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #f4f4f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggleTheme:hover {
+    background-color: #666;
+}
+
+#submitcode {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #f4f4f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitcode:hover {
+    background-color: #666;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #f4f4f9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #666;
+    outline: none;
+}
+
+.light-mode {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.light-mode .home {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.light-mode .header {
+    border-color: #ddd;
+}
+
+.light-mode pre {
+    background-color: #d5d5d5;
+    color: #333;
+}
+
+.light-mode #copyButton,
+.light-mode #toggleTheme,
+.light-mode #submitcode {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.light-mode #copyButton:hover,
+.light-mode #toggleTheme:hover,
+.light-mode #submitcode:hover {
     background-color: #0056b3;
+}
+
+.light-mode input[type="text"] {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.light-mode input[type="text"]:focus {
+    border-color: #007bff;
 }
