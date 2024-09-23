@@ -1,9 +1,11 @@
 const express = require('express');
 const fs = require('fs');
+const morgan = require('morgan');
 const path = require('path');
 const config = require('./config.json');
 const app = express();
 
+app.use(morgan(':remote-addr - :method :url :status :response-time ms'));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
@@ -37,5 +39,5 @@ app.get('/:route', (req, res) => {
 });
 
 app.listen(3030, () => {
-    console.log('Serveur démarré sur http://127.0.0.1:3030');
+    console.log('Serveur démarré sur le port 3030 !');
 });
