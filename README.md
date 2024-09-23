@@ -14,26 +14,26 @@ Ce projet permet de crée des URLs afin de partager des fichiers. Il suffis de d
 
 1. Clonez le dépôt du projet :
 
-   \`\`\`bash
+   ```bash
    git clone <URL_DU_DEPOT>
    cd <NOM_DU_REPERTOIRE>
-   \`\`\`
+   ```
 
 2. Installez les dépendances :
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Démarrez le serveur :
 
-   \`\`\`bash
+   ```bash
    node app.js
-   \`\`\`
+   ```
    ou
-   \`\`\`bash
+   ```bash
    make all
-   \`\`\`
+   ```
 
 Le serveur démarrera sur le port \`3030\`.
 
@@ -44,7 +44,7 @@ Le serveur démarrera sur le port \`3030\`.
 1. Placez votre fichier dans le dossier \`/files\`.
 2. Ouvrez le fichier \`config.json\` et ajoutez une nouvelle entrée pour le fichier comme suit :
 
-   \`\`\`json
+   ```json
    {
      "routes": [
        {
@@ -54,7 +54,7 @@ Le serveur démarrera sur le port \`3030\`.
        }
      ]
    }
-   \`\`\`
+   ```
 
    Remplacez \`ID_UNIQUE\` par un identifiant unique, \`NOM_DU_FICHIER\` par le nom du fichier, et \`DESCRIPTION_DU_FICHIER\` par une brève description du fichier.
 
@@ -74,45 +74,45 @@ Vous pouvez utiliser le \`Makefile\` pour simplifier les tâches courantes. Voic
 
 1. Pour installer les dépendances et démarrer le serveur, exécutez :
 
-   \`\`\`bash
+   ```bash
    make all
-   \`\`\`
+   ```
 
 2. Pour installer uniquement les dépendances, exécutez :
 
-   \`\`\`bash
+   ```bash
    make install
-   \`\`\`
+   ```
 
 3. Pour démarrer le serveur, exécutez :
 
-   \`\`\`bash
+   ```bash
    make start
-   \`\`\`
+   ```
 
 4. Pour arrêter le serveur, utilisez :
 
-   \`\`\`bash
+   ```bash
    make stop
-   \`\`\`
+   ```
 
 5. Pour nettoyer les dépendances, exécutez :
 
-   \`\`\`bash
+   ```bash
    make clean
-   \`\`\`
+   ```
 
 6. Pour afficher les informations sur le projet, utilisez :
 
-   \`\`\`bash
+   ```bash
    make info
-   \`\`\`
+   ```
 
 7. Pour afficher l'aide sur les cibles disponibles, exécutez :
 
-   \`\`\`bash
+   ```bash
    make help
-   \`\`\`
+   ```
 
 ## Contribuer
 
