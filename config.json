@@ -2,18 +2,8 @@
     "routes": [
       {
         "path": "rgdEDfe",
-        "file": "0x4A4C02AE2b58c5513c5FCeE81BDD0991735CC33B.sol",
-        "description": "test"
-      },
-      {
-        "path": "rgurdDe",
-        "file": "0x05c479Dd03fDA34815ae147E3a9EC58F00a5C7CA.sol",
-        "description": "test"
-      },
-      {
-        "path": "rgEfhtnd",
-        "file": "0xCc8f1F383ACeC61b369FC1C1480D73b640A3b2b8.sol",
-        "description": "test"
+        "file": "exemple.js",
+        "description": "Some exemple file"
       }
     ]
   }
