@@ -39,5 +39,5 @@ app.get('/:route', (req, res) => {
 });
 
 app.listen(3030, () => {
-    console.log('Serveur démarré sur le port 3030 !');
+    console.log('Serveur démarré sur le port 3030 !\nPour arrêter le serveur, utilisez Ctrl+C.');
 });
